@@ -1,0 +1,39 @@
+
+name: deploy to terraform
+on: [push]
+jobs:
+  deploy_source:
+    name: terraform deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+
+      - name: setup terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 0.15.3
+
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.SECRET_KEY }}
+          aws-region: eu-west-1
+
+      - name: terraform initial
+        run: |
+          terraform init \
+            -backend-config="bucket=terraform-cnl-backend" \
+            -backend-config="key=state/state.tfstate" \
+            -backend-config="region=eu-west-1" \
+            -backend=true
+
+      - name: terraform plan
+        run: terraform  plan -var-file=config.tfvars
+
+      - name: terraform apply
+        run: terraform  apply -var-file=config.tfvars -auto-approve
+
+      # - name: terraform destroy
+      #   run: terraform  destroy -var-file=config.tfvars -auto-approve
