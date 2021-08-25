@@ -24,7 +24,7 @@ jobs:
       - name: terraform initial
         run: |
           terraform init \
-            -backend-config="bucket=terraform-cnl-backend" \
+            -backend-config="bucket=terraform-tf-backend" \
             -backend-config="key=state/state.tfstate" \
             -backend-config="region=eu-west-1" \
             -backend=true
