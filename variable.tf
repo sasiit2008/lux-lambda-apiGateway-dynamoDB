@@ -1,3 +1,5 @@
+# variable.tf 
+
 # variable "accessKey" {}
 # variable "secretKey" {}
 variable "region" {}

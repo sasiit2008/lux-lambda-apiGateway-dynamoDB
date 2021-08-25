@@ -1,3 +1,5 @@
+# dynamodb.tf 
+
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
   name           = "${var.project}-${var.environment}-dynamodb"
   billing_mode   = "PROVISIONED"

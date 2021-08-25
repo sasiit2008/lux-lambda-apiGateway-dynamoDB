@@ -1,3 +1,5 @@
+# provider.tf
+
 provider "aws" {
   region = var.region
   # access_key = var.accessKey
@@ -7,4 +9,3 @@ provider "aws" {
 terraform {
   backend "s3" {}
 }
-

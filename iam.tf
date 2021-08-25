@@ -1,3 +1,5 @@
+# iam.tf
+
 resource "aws_iam_role" "iam_for_lambda" {
   name               = "${var.project}-${var.environment}-lambda-iamrole"
   assume_role_policy = <<EOF

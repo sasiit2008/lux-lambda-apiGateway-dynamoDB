@@ -1,3 +1,5 @@
+# api.tf
+
 resource "aws_api_gateway_rest_api" "apiLambda" {
   name = "get-${var.project}-${var.environment}-apigateway"
   tags = merge({ Name = "${var.project}-${var.environment}-apigateway" }, tomap(var.additional_tags))
