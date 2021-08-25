@@ -12,7 +12,6 @@ resource "aws_lambda_function" "get" {
   role          = aws_iam_role.iam_for_lambda.arn
   timeout       = 30
   tags          = merge({ Name = "${var.project}-${var.environment}-lambda" }, tomap(var.additional_tags))
-
 }
 
 resource "aws_cloudwatch_log_group" "get" {
