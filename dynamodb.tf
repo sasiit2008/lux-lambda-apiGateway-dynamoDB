@@ -1,21 +1,59 @@
 # dynamodb.tf 
 
-resource "aws_dynamodb_table" "basic-dynamodb-table" {
-  name           = "${var.project}-${var.environment}-dynamodb"
+resource "aws_dynamodb_table" "chatbot" {
+  name           = "${var.project}-chatbot-${var.environment}"
   billing_mode   = "PROVISIONED"
   read_capacity  = 20
   write_capacity = 20
-  hash_key       = "UserId"
+  hash_key       = "S.No"
   range_key      = "GameTitle"
 
   attribute {
-    name = "UserId"
+    name = "S.No"
+    type = "S"
+  }
+  attribute {
+    name = "Alias"
     type = "S"
   }
 
   attribute {
-    name = "GameTitle"
+    name = "Answer"
     type = "S"
   }
-  tags = merge({ Name = "${var.project}-${var.environment}-dynamodb" }, tomap(var.additional_tags))
+
+  attribute {
+    name = "Model"
+    type = "S"
+  }
+  attribute {
+    name = "Google_Documents_Link"
+    type = "S"
+  }
+  attribute {
+    name = "ItemMenu"
+    type = "S"
+  }
+  attribute {
+    name = "ServiceNowCategory"
+    type = "S"
+  }
+  attribute {
+    name = "SubModule"
+    type = "S"
+  }
+  attribute {
+    name = "Topic"
+    type = "S"
+  }
+  attribute {
+    name = "Country"
+    type = "S"
+  }
+  attribute {
+    name = "Slot"
+    type = "S"
+  }
+
+  tags = merge({ Name = "${var.project}-chatbot-${var.environment}-dynamodb" }, tomap(var.additional_tags))
 }

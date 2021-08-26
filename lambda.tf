@@ -13,7 +13,7 @@ resource "aws_lambda_function" "translate" {
   runtime       = "nodejs14.x"
   role          = aws_iam_role.iam_for_lambda.arn
   timeout       = 30
-  tags          = merge({ Name = "${var.project}-${var.environment}-lambda" }, tomap(var.additional_tags))
+  tags          = merge({ Name = "${var.project}-translate-${var.environment}-lambda" }, tomap(var.additional_tags))
 }
 
 resource "aws_cloudwatch_log_group" "translate" {
@@ -28,7 +28,7 @@ resource "aws_lambda_function" "chatbot" {
   runtime       = "nodejs14.x"
   role          = aws_iam_role.iam_for_lambda.arn
   timeout       = 30
-  tags          = merge({ Name = "${var.project}-${var.environment}-lambda" }, tomap(var.additional_tags))
+  tags          = merge({ Name = "${var.project}-chatbot-${var.environment}-lambda" }, tomap(var.additional_tags))
 }
 
 resource "aws_cloudwatch_log_group" "chatbot" {
