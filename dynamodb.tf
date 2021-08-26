@@ -36,10 +36,10 @@ resource "aws_dynamodb_table" "chatbot" {
   #   name = "Google_Documents_Link"
   #   type = "S"
   # }
-  # attribute {
-  #   name = "ItemMenu"
-  #   type = "S"
-  # }
+  attribute {
+    name = "ItemMenu"
+    type = "S"
+  }
   # attribute {
   #   name = "ServiceNowCategory"
   #   type = "S"
