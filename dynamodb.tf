@@ -15,51 +15,31 @@ resource "aws_dynamodb_table" "chatbot" {
     name               = "ItemMenu"
     hash_key           = "ItemMenu"
     projection_type    = "INCLUDE"
-    non_key_attributes = ["ItemMenu"]
+  }
+  global_secondary_index {
+    name               = "SubModule"
+    hash_key           = "SubModule"
+    projection_type    = "INCLUDE"
+  }
+    global_secondary_index {
+    name               = "Topic"
+    hash_key           = "Topic"
+    projection_type    = "INCLUDE"
   }
 
-  # attribute {
-  #   name = "Alias"
-  #   type = "S"
-  # }
-
-  # attribute {
-  #   name = "Answer"
-  #   type = "S"
-  # }
-
-  # attribute {
-  #   name = "Model"
-  #   type = "S"
-  # }
-  # attribute {
-  #   name = "Google_Documents_Link"
-  #   type = "S"
-  # }
   attribute {
     name = "ItemMenu"
     type = "S"
   }
-  # attribute {
-  #   name = "ServiceNowCategory"
-  #   type = "S"
-  # }
-  # attribute {
-  #   name = "SubModule"
-  #   type = "S"
-  # }
-  # attribute {
-  #   name = "Topic"
-  #   type = "S"
-  # }
-  # attribute {
-  #   name = "Country"
-  #   type = "S"
-  # }
-  # attribute {
-  #   name = "Slot"
-  #   type = "S"
-  # }
+
+  attribute {
+    name = "SubModule"
+    type = "S"
+  }
+  attribute {
+    name = "Topic"
+    type = "S"
+  }
 
   tags = merge({ Name = "${var.project}-chatbot-${var.environment}-dynamodb" }, tomap(var.additional_tags))
 }
