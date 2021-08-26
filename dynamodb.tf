@@ -72,16 +72,12 @@ resource "aws_dynamodb_table" "menu" {
     name = "LangCode"
     type = "S"
   }
-
-  attribute {
-    name = "SubModule"
-    type = "S"
-  }
-
-  attribute {
-    name = "Message"
-    type = "S"
-  }
+local_secondary_index {
+  name = "module_message"
+  range_key = "LangCode"
+  projection_type = "INCLUDE"
+  non_key_attributes = ["SubModule", "Message"]
+}
 
   tags = merge({ Name = "${var.project}-chatbot-menu-${var.environment}-dynamodb" }, tomap(var.additional_tags))
 }
