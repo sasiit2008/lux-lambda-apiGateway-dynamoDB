@@ -8,8 +8,16 @@ resource "aws_dynamodb_table" "chatbot" {
   hash_key       = "S.No"
   attribute {
     name = "S.No"
-    type = "S"
+    type = "Number"
   }
+
+  global_secondary_index {
+    name               = "ItemMenu"
+    hash_key           = "ItemMenu"
+    projection_type    = "INCLUDE"
+    non_key_attributes = ["ItemMenu"]
+  }
+
   # attribute {
   #   name = "Alias"
   #   type = "S"
@@ -72,13 +80,6 @@ resource "aws_dynamodb_table" "menu" {
     name = "LangCode"
     type = "S"
   }
-local_secondary_index {
-  name = "local_indexes"
-  range_key = "LangCode"
-  projection_type = "INCLUDE"
-  non_key_attributes = ["SubModule", "Message"]
-}
-
   tags = merge({ Name = "${var.project}-chatbot-menu-${var.environment}-dynamodb" }, tomap(var.additional_tags))
 }
 
