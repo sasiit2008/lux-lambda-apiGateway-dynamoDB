@@ -15,16 +15,22 @@ resource "aws_dynamodb_table" "chatbot" {
     name               = "ItemMenu"
     hash_key           = "ItemMenu"
     projection_type    = "INCLUDE"
+    write_capacity     = 10
+    read_capacity      = 10
   }
   global_secondary_index {
     name               = "SubModule"
     hash_key           = "SubModule"
     projection_type    = "INCLUDE"
+    write_capacity     = 10
+    read_capacity      = 10
   }
     global_secondary_index {
     name               = "Topic"
     hash_key           = "Topic"
     projection_type    = "INCLUDE"
+    write_capacity     = 10
+    read_capacity      = 10
   }
 
   attribute {
