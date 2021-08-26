@@ -6,8 +6,6 @@ resource "aws_dynamodb_table" "chatbot" {
   read_capacity  = 20
   write_capacity = 20
   hash_key       = "S.No"
-  range_key      = "GameTitle"
-
   attribute {
     name = "S.No"
     type = "S"
@@ -56,4 +54,38 @@ resource "aws_dynamodb_table" "chatbot" {
   }
 
   tags = merge({ Name = "${var.project}-chatbot-${var.environment}-dynamodb" }, tomap(var.additional_tags))
+}
+
+
+
+
+# menu dunamo
+# dynamodb.tf 
+
+resource "aws_dynamodb_table" "menu" {
+  name           = "${var.project}-chatbot-menu-${var.environment}"
+  billing_mode   = "PROVISIONED"
+  read_capacity  = 20
+  write_capacity = 20
+  hash_key       = "ItemMenu"
+  attribute {
+    name = "ItemMenu"
+    type = "S"
+  }
+  attribute {
+    name = "LangCode"
+    type = "S"
+  }
+
+  attribute {
+    name = "SubModule"
+    type = "S"
+  }
+
+  attribute {
+    name = "Message"
+    type = "S"
+  }
+
+  tags = merge({ Name = "${var.project}-chatbot-menu-${var.environment}-dynamodb" }, tomap(var.additional_tags))
 }
