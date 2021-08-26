@@ -73,7 +73,7 @@ resource "aws_dynamodb_table" "menu" {
     type = "S"
   }
 local_secondary_index {
-  name = "module_message"
+  name = "local_indexes"
   range_key = "LangCode"
   projection_type = "INCLUDE"
   non_key_attributes = ["SubModule", "Message"]
