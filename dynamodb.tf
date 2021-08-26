@@ -8,7 +8,7 @@ resource "aws_dynamodb_table" "chatbot" {
   hash_key       = "S.No"
   attribute {
     name = "S.No"
-    type = "Number"
+    type = "N"
   }
 
   global_secondary_index {
