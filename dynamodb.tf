@@ -10,7 +10,7 @@ resource "aws_dynamodb_table" "chatbot" {
     name = "S.No"
     type = "S"
   }
-  
+
   # attribute {
   #   name = "Alias"
   #   type = "S"
@@ -64,24 +64,20 @@ resource "aws_dynamodb_table" "menu" {
   read_capacity  = 20
   write_capacity = 20
   hash_key       = "ItemMenu"
-  attribute {
+  attribute = [{
     name = "ItemMenu"
     type = "S"
-  }
-  # attribute {
-  #   name = "LangCode"
-  #   type = "S"
-  # }
-
-  # attribute {
-  #   name = "SubModule"
-  #   type = "S"
-  # }
-
-  # attribute {
-  #   name = "Message"
-  #   type = "S"
-  # }
+  }, {
+    name = "LangCode"
+    type = "S"
+  }, {
+    name = "SubModule"
+    type = "S"
+  }, {
+    name = "Message"
+    type = "S"
+  }]
+  
 
   tags = merge({ Name = "${var.project}-chatbot-menu-${var.environment}-dynamodb" }, tomap(var.additional_tags))
 }
