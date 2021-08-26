@@ -31,7 +31,7 @@ resource "aws_lambda_function" "chatbot" {
   tags          = merge({ Name = "${var.project}-${var.environment}-lambda" }, tomap(var.additional_tags))
 }
 
-resource "aws_cloudwatch_log_group" "translate" {
+resource "aws_cloudwatch_log_group" "chatbot" {
   name              = "/aws/lambda/${var.project}-chatbot-${var.environment}"
   retention_in_days = 14
 }
