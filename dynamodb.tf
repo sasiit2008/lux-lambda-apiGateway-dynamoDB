@@ -57,12 +57,6 @@ resource "aws_dynamodb_table" "chatbot" {
     enabled = false
   }
 
-  timeouts {}
-
-  ttl {
-    enabled = false
-  }
-
   tags = merge({ Name = "${var.project}-chatbot-${var.environment}-dynamodb" }, tomap(var.additional_tags))
 }
 
@@ -85,12 +79,6 @@ resource "aws_dynamodb_table" "menu" {
   }
 
   point_in_time_recovery {
-    enabled = false
-  }
-
-  timeouts {}
-
-  ttl {
     enabled = false
   }
 
