@@ -73,6 +73,8 @@ resource "aws_dynamodb_table" "menu" {
   read_capacity  = 5
   write_capacity = 5
   hash_key       = "ItemMenu"
+  range_key      = "LangCode"
+
   attribute {
     name = "ItemMenu"
     type = "S"
