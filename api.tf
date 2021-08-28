@@ -75,7 +75,7 @@ resource "aws_api_gateway_integration_response" "getTranslation" {
 resource "aws_api_gateway_deployment" "getTranslation" {
   depends_on  = [aws_api_gateway_integration.getTranslation]
   rest_api_id = aws_api_gateway_rest_api.getTranslation.id
-  stage_name  = "dev"
+  stage_name  = "development-stage"
 }
 
 resource "aws_api_gateway_stage" "getTranslation" {
@@ -105,7 +105,7 @@ resource "aws_api_gateway_account" "act" {
 }
 
 resource "aws_cloudwatch_log_group" "cloudlogs" {
-  name = "API-Gateway-Execution-Logs_${aws_api_gateway_rest_api.getTranslation.id}/prod"
+  name = "API-Gateway-Execution-Logs_${aws_api_gateway_rest_api.getTranslation.id}/NProd"
 }
 
 resource "aws_iam_role" "cloudwatch" {
