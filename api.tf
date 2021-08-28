@@ -93,7 +93,7 @@ EOF
 resource "aws_api_gateway_method_settings" "getTranslation" {
   rest_api_id = aws_api_gateway_rest_api.getTranslation.id
   stage_name  = aws_api_gateway_stage.getTranslation.stage_name
-  method_path = "${trimprefix(aws_api_gateway_resource.source.path, "/")}/${aws_api_gateway_method.post.http_method}"
+  method_path = "${trimprefix(aws_api_gateway_resource.source.path, "/")}/${aws_api_gateway_method.getTranslation.http_method}"
   settings {
     metrics_enabled = true
     logging_level   = "INFO"
