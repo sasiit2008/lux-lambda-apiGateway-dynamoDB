@@ -15,7 +15,7 @@ resource "aws_lex_bot" "LATIS_AddressBook_HELP" {
         message {
             content      = "Sorry, I could not understand. Please type 'Help'"
             content_type = "PlainText"
-            group_number = 0
+            group_number = 1
         }
     }
 
