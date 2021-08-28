@@ -55,7 +55,7 @@ resource "aws_api_gateway_integration" "getTranslation" {
   resource_id             = aws_api_gateway_resource.getTranslation.id
   timeout_milliseconds    = 29000
   type                    = "AWS"
-  uri                     = "arn:aws:apigateway:${region}:lambda:path/2015-03-31/functions/${aws_lambda_function.translate.arn}/invocations"
+  uri                     = "arn:aws:apigateway:${var.region}:lambda:path/2015-03-31/functions/${aws_lambda_function.translate.arn}/invocations"
 }
 
 
