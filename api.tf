@@ -9,11 +9,12 @@ resource "aws_api_gateway_rest_api" "getTranslation" {
 #   rest_api_id = aws_api_gateway_rest_api.getTranslation.id
 #   path_part   = "/"
 # }
-resource "aws_api_gateway_resource" "getTranslation" {
-  rest_api_id = aws_api_gateway_rest_api.getTranslation.id
-  parent_id   = aws_api_gateway_rest_api.getTranslation.root_resource_id
-  path_part   = "/gettranslatetdtext"
-}
+
+# resource "aws_api_gateway_resource" "getTranslation" {
+#   rest_api_id = aws_api_gateway_rest_api.getTranslation.id
+#   parent_id   = aws_api_gateway_rest_api.getTranslation.root_resource_id
+#   path_part   = "/gettranslatetdtext"
+# }
 
 # resource "aws_api_gateway_method" "get" {
 #   rest_api_id   = aws_api_gateway_rest_api.apiLambda.id
