@@ -2,13 +2,13 @@
 
 data "archive_file" "lambda" {
   type        = "zip"
-  source_dir = "${path.module}/deployment-files"
-  output_path = "${path.module}/deployment-files.zip"
+  source_dir = "${path.module}/${var.lambda_deployment_folder}"
+  output_path = "${path.module}/${var.lambda_deployment_folder}.zip"
 }
 
 resource "aws_lambda_function" "translate" {
   function_name = "${var.project}-translate-${var.environment}"
-  filename      = "${path.module}/deployment-files.zip"
+  filename      = "${path.module}/${var.lambda_deployment_folder}.zip"
   handler       = "index.handler"
   runtime       = "nodejs14.x"
   role          = aws_iam_role.iam_for_lambda.arn
@@ -23,7 +23,7 @@ resource "aws_cloudwatch_log_group" "translate" {
 
 resource "aws_lambda_function" "chatbot" {
   function_name = "${var.project}-chatbot-${var.environment}"
-  filename      = "${path.module}/index.js.zip"
+  filename      =  "${path.module}/${var.lambda_deployment_folder}.zip"
   handler       = "index.handler"
   runtime       = "nodejs14.x"
   role          = aws_iam_role.iam_for_lambda.arn

@@ -7,4 +7,6 @@ variable "project" {}
 variable "environment" {}
 variable "additional_tags" {}
 
+variable "lambda_deployment_folder" {}
+
 
