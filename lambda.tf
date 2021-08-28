@@ -2,13 +2,13 @@
 
 data "archive_file" "lambda" {
   type        = "zip"
-  source_file = "${path.module}/index.js"
-  output_path = "${path.module}/index.js.zip"
+  source_file = "${path.module}/deployment-files"
+  output_path = "${path.module}/deployment-files.zip"
 }
 
 resource "aws_lambda_function" "translate" {
   function_name = "${var.project}-translate-${var.environment}"
-  filename      = "${path.module}/index.js.zip"
+  filename      = "${path.module}/deployment-files.zip"
   handler       = "index.handler"
   runtime       = "nodejs14.x"
   role          = aws_iam_role.iam_for_lambda.arn
