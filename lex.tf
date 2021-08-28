@@ -7,7 +7,7 @@ resource "aws_lex_bot" "lex" {
     locale                          = "en-GB"
     name                            = "OrderFlowers"
     nlu_intent_confidence_threshold = 0.4
-    process_behavior                = "SAVE"
+    # process_behavior                = "SAVE"
     voice_id                        = "0"
 
     abort_statement {
