@@ -227,342 +227,342 @@ resource "aws_lex_bot" "LATIS_AddressBook_HELP" {
         intent_name    = "LATIS_JC_Scheduling"
         intent_version = "3"
     }
-    intent {
-        intent_name    = "LATIS_MD_AddressBook"
-        intent_version = "3"
-    }
-    intent {
-        intent_name    = "LATIS_MRP"
-        intent_version = "20"
-    }
-    intent {
-        intent_name    = "LATIS_MRP_Help_Menu"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_MRP_SalesOrder"
-        intent_version = "2"
-    }
-    intent {
-        intent_name    = "LATIS_Missing_Batch"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_NSP_PoApproval"
-        intent_version = "3"
-    }
-    intent {
-        intent_name    = "LATIS_NS_GL"
-        intent_version = "7"
-    }
-    intent {
-        intent_name    = "LATIS_NS_Purchase_Order_Rollout"
-        intent_version = "9"
-    }
-    intent {
-        intent_name    = "LATIS_POApproval_Help"
-        intent_version = "7"
-    }
-    intent {
-        intent_name    = "LATIS_POEntry_Help"
-        intent_version = "12"
-    }
-    intent {
-        intent_name    = "LATIS_POPRINT_HELP"
-        intent_version = "18"
-    }
-    intent {
-        intent_name    = "LATIS_PO_Creation"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_PO_MatchingReceipt"
-        intent_version = "3"
-    }
-    intent {
-        intent_name    = "LATIS_PR_PO"
-        intent_version = "14"
-    }
-    intent {
-        intent_name    = "LATIS_PoCreation_Help"
-        intent_version = "8"
-    }
-    intent {
-        intent_name    = "LATIS_PoCreation_LiveCheck"
-        intent_version = "2"
-    }
-    intent {
-        intent_name    = "LATIS_PoEntry_Rejection"
-        intent_version = "3"
-    }
-    intent {
-        intent_name    = "LATIS_PoInquiry_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_PoPrint_InitialLines"
-        intent_version = "7"
-    }
-    intent {
-        intent_name    = "LATIS_PoPrint_LiveCheck"
-        intent_version = "3"
-    }
-    intent {
-        intent_name    = "LATIS_PoReceipt_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_PoReceipt_LiveCheck"
-        intent_version = "3"
-    }
-    intent {
-        intent_name    = "LATIS_PoStatus_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_Process_Purchase"
-        intent_version = "12"
-    }
-    intent {
-        intent_name    = "LATIS_Process_Update"
-        intent_version = "6"
-    }
-    intent {
-        intent_name    = "LATIS_Procurement_GL"
-        intent_version = "11"
-    }
-    intent {
-        intent_name    = "LATIS_Procurement_Purchase"
-        intent_version = "6"
-    }
-    intent {
-        intent_name    = "LATIS_Procurement_PurchaseOrder_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_ProjectMaster_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_Purchase_Order"
-        intent_version = "14"
-    }
-    intent {
-        intent_name    = "LATIS_Random_Identifier"
-        intent_version = "11"
-    }
-    intent {
-        intent_name    = "LATIS_Record_Invalid_message_in_various_programmes"
-        intent_version = "6"
-    }
-    intent {
-        intent_name    = "LATIS_Reminder_Letter"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_Response_No"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_Response_Yes"
-        intent_version = "3"
-    }
-    intent {
-        intent_name    = "LATIS_SD_NextStatus"
-        intent_version = "7"
-    }
-    intent {
-        intent_name    = "LATIS_SD_OD"
-        intent_version = "7"
-    }
-    intent {
-        intent_name    = "LATIS_SODOC_blank"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_SODOC_print"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_SO_Inquiry"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_SO_Lots"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_SO_Status_Update"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_Sales"
-        intent_version = "4"
-    }
-    intent {
-        intent_name    = "LATIS_SalesOrder_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_SalesUpdate_Failure"
-        intent_version = "13"
-    }
-    intent {
-        intent_name    = "LATIS_SalesUpdate_Help"
-        intent_version = "10"
-    }
-    intent {
-        intent_name    = "LATIS_SalesUpdate_LiveCheck"
-        intent_version = "2"
-    }
-    intent {
-        intent_name    = "LATIS_Sales_AR_Invoice"
-        intent_version = "8"
-    }
-    intent {
-        intent_name    = "LATIS_Sales_Order"
-        intent_version = "7"
-    }
-    intent {
-        intent_name    = "LATIS_Sales_Order_loaction"
-        intent_version = "7"
-    }
-    intent {
-        intent_name    = "LATIS_Sales_Update"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_Scheduling_Help"
-        intent_version = "2"
-    }
-    intent {
-        intent_name    = "LATIS_ShipConfirm_LiveCheck"
-        intent_version = "2"
-    }
-    intent {
-        intent_name    = "LATIS_Supplier_AP_Invoice"
-        intent_version = "9"
-    }
-    intent {
-        intent_name    = "LATIS_TEServiceOrder_LiveCheck"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_TE_AfterApproval"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_TE_BeforeApproval"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_TimeAssignment_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_TimeEntry_Help"
-        intent_version = "6"
-    }
-    intent {
-        intent_name    = "LATIS_TimeEntry_LiveCheck"
-        intent_version = "2"
-    }
-    intent {
-        intent_name    = "LATIS_TimeIntegration_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_TimeSetup_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_TimeUpload_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_Time_Entry"
-        intent_version = "10"
-    }
-    intent {
-        intent_name    = "LATIS_Time_Entry_Integreted"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_Time_Entry_TimeCalender"
-        intent_version = "8"
-    }
-    intent {
-        intent_name    = "LATIS_Time_Entry_TimeCard"
-        intent_version = "6"
-    }
-    intent {
-        intent_name    = "LATIS_Time_Entry_TimeWeek"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_Time_Entry_Uploaded"
-        intent_version = "7"
-    }
-    intent {
-        intent_name    = "LATIS_Time_InvalidPayStatus"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_Unresolved"
-        intent_version = "2"
-    }
-    intent {
-        intent_name    = "LATIS_VAT_report"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_VM_Deactive"
-        intent_version = "3"
-    }
-    intent {
-        intent_name    = "LATIS_VOM_PoUpdate"
-        intent_version = "3"
-    }
-    intent {
-        intent_name    = "LATIS_VariationManagement_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_Vendor"
-        intent_version = "8"
-    }
-    intent {
-        intent_name    = "LATIS_VendorMaster_Help"
-        intent_version = "2"
-    }
-    intent {
-        intent_name    = "LATIS_Vendor_HELP"
-        intent_version = "7"
-    }
-    intent {
-        intent_name    = "LATIS_Vendor_Hold"
-        intent_version = "5"
-    }
-    intent {
-        intent_name    = "LATIS_VoucherMatch_LiveCheck"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_Websend_AR"
-        intent_version = "6"
-    }
-    intent {
-        intent_name    = "LATIS_Websend_Invoice"
-        intent_version = "6"
-    }
-    intent {
-        intent_name    = "LATIS_WorkbenchOrders_Help"
-        intent_version = "1"
-    }
-    intent {
-        intent_name    = "LATIS_greetingUser"
-        intent_version = "8"
-    }
+    # intent {
+    #     intent_name    = "LATIS_MD_AddressBook"
+    #     intent_version = "3"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_MRP"
+    #     intent_version = "20"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_MRP_Help_Menu"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_MRP_SalesOrder"
+    #     intent_version = "2"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Missing_Batch"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_NSP_PoApproval"
+    #     intent_version = "3"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_NS_GL"
+    #     intent_version = "7"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_NS_Purchase_Order_Rollout"
+    #     intent_version = "9"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_POApproval_Help"
+    #     intent_version = "7"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_POEntry_Help"
+    #     intent_version = "12"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_POPRINT_HELP"
+    #     intent_version = "18"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PO_Creation"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PO_MatchingReceipt"
+    #     intent_version = "3"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PR_PO"
+    #     intent_version = "14"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PoCreation_Help"
+    #     intent_version = "8"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PoCreation_LiveCheck"
+    #     intent_version = "2"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PoEntry_Rejection"
+    #     intent_version = "3"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PoInquiry_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PoPrint_InitialLines"
+    #     intent_version = "7"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PoPrint_LiveCheck"
+    #     intent_version = "3"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PoReceipt_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PoReceipt_LiveCheck"
+    #     intent_version = "3"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_PoStatus_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Process_Purchase"
+    #     intent_version = "12"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Process_Update"
+    #     intent_version = "6"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Procurement_GL"
+    #     intent_version = "11"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Procurement_Purchase"
+    #     intent_version = "6"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Procurement_PurchaseOrder_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_ProjectMaster_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Purchase_Order"
+    #     intent_version = "14"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Random_Identifier"
+    #     intent_version = "11"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Record_Invalid_message_in_various_programmes"
+    #     intent_version = "6"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Reminder_Letter"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Response_No"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Response_Yes"
+    #     intent_version = "3"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SD_NextStatus"
+    #     intent_version = "7"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SD_OD"
+    #     intent_version = "7"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SODOC_blank"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SODOC_print"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SO_Inquiry"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SO_Lots"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SO_Status_Update"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Sales"
+    #     intent_version = "4"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SalesOrder_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SalesUpdate_Failure"
+    #     intent_version = "13"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SalesUpdate_Help"
+    #     intent_version = "10"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_SalesUpdate_LiveCheck"
+    #     intent_version = "2"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Sales_AR_Invoice"
+    #     intent_version = "8"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Sales_Order"
+    #     intent_version = "7"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Sales_Order_loaction"
+    #     intent_version = "7"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Sales_Update"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Scheduling_Help"
+    #     intent_version = "2"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_ShipConfirm_LiveCheck"
+    #     intent_version = "2"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Supplier_AP_Invoice"
+    #     intent_version = "9"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_TEServiceOrder_LiveCheck"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_TE_AfterApproval"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_TE_BeforeApproval"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_TimeAssignment_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_TimeEntry_Help"
+    #     intent_version = "6"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_TimeEntry_LiveCheck"
+    #     intent_version = "2"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_TimeIntegration_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_TimeSetup_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_TimeUpload_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Time_Entry"
+    #     intent_version = "10"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Time_Entry_Integreted"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Time_Entry_TimeCalender"
+    #     intent_version = "8"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Time_Entry_TimeCard"
+    #     intent_version = "6"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Time_Entry_TimeWeek"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Time_Entry_Uploaded"
+    #     intent_version = "7"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Time_InvalidPayStatus"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Unresolved"
+    #     intent_version = "2"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_VAT_report"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_VM_Deactive"
+    #     intent_version = "3"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_VOM_PoUpdate"
+    #     intent_version = "3"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_VariationManagement_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Vendor"
+    #     intent_version = "8"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_VendorMaster_Help"
+    #     intent_version = "2"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Vendor_HELP"
+    #     intent_version = "7"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Vendor_Hold"
+    #     intent_version = "5"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_VoucherMatch_LiveCheck"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Websend_AR"
+    #     intent_version = "6"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_Websend_Invoice"
+    #     intent_version = "6"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_WorkbenchOrders_Help"
+    #     intent_version = "1"
+    # }
+    # intent {
+    #     intent_name    = "LATIS_greetingUser"
+    #     intent_version = "8"
+    # }
 
     timeouts {}
 }
