@@ -15,7 +15,7 @@ resource "aws_api_gateway_rest_api" "getTranslation" {
 }
 
 resource "aws_api_gateway_resource" "getTranslation" {
-  path_part   = "/gettranslatetdtext"
+  path_part   = "gettranslatetdtext"
   rest_api_id = aws_api_gateway_rest_api.getTranslation.id
   parent_id   = aws_api_gateway_rest_api.getTranslation.root_resource_id
 }
@@ -24,7 +24,6 @@ resource "aws_api_gateway_method" "getTranslation" {
   api_key_required   = false
   authorization      = "NONE"
   http_method        = "POST"
-  id                 = "agm-pdzr2m3hvk-ql7hei-POST"
   request_models     = {}
   request_parameters = {}
   rest_api_id        = aws_api_gateway_rest_api.getTranslation.id
