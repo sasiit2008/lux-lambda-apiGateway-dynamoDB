@@ -20,7 +20,7 @@ resource "aws_api_gateway_rest_api" "getTranslation" {
 # }
 
 resource "aws_api_gateway_resource" "getTranslation" {
-    path        = "/"
+    path_part   = "/"
     rest_api_id = aws_api_gateway_rest_api.getTranslation.id
     parent_id   = aws_api_gateway_rest_api.getTranslation.root_resource_id
 }
