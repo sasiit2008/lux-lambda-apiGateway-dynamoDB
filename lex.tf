@@ -21,10 +21,10 @@ resource "aws_lex_bot" "order_flowers" {
   detect_sentiment            = false
   idle_session_ttl_in_seconds = 600
 
-  intent {
-    intent_name    = aws_lex_intent.order_flowers.name
-    intent_version = aws_lex_intent.order_flowers.version
-  }
+#   intent {
+#     intent_name    = aws_lex_intent.order_flowers.name
+#     intent_version = aws_lex_intent.order_flowers.version
+#   }
 
   locale   = "en-US"
   name     = "OrderFlowers"
