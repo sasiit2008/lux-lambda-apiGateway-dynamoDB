@@ -100,17 +100,6 @@ resource "aws_api_gateway_method_settings" "getTranslation" {
   }
 }
 
-resource "aws_api_gateway_method_settings" "getTranslation" {
-  rest_api_id = aws_api_gateway_rest_api.getTranslation.id
-  stage_name  = aws_api_gateway_stage.getTranslation.stage_name
-  method_path = "${trimprefix(aws_api_gateway_resource.getTranslation.path, "/")}/${aws_api_gateway_method.getTranslation.http_method}"
-  settings {
-    metrics_enabled = true
-    logging_level   = "INFO"
-  }
-}
-
-
 resource "aws_api_gateway_account" "act" {
   cloudwatch_role_arn = aws_iam_role.cloudwatch.arn
 }
