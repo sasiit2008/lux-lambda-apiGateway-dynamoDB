@@ -1,9 +1,26 @@
 # # api.tf
 
 resource "aws_api_gateway_rest_api" "getTranslation" {
-  name = "getTranslation${var.environment}"
-  tags = merge({ Name = "${var.project}-${var.environment}-getTranslation-apigateway" }, tomap(var.additional_tags))
+    api_key_source               = "HEADER"
+    description                  = "API to trigger lambda for translation"
+    disable_execute_api_endpoint = false
+    minimum_compression_size     = -1
+    name                         = "getTranslation"
+    tags = merge({ Name = "${var.project}-${var.environment}-getTranslation-apigateway" }, tomap(var.additional_tags))
+
+
+    endpoint_configuration {
+        types            = [
+            "REGIONAL",
+        ]
+        vpc_endpoint_ids = []
+    }
 }
+
+# resource "aws_api_gateway_rest_api" "getTranslation" {
+#   name = "getTranslation${var.environment}"
+#   tags = merge({ Name = "${var.project}-${var.environment}-getTranslation-apigateway" }, tomap(var.additional_tags))
+# }
 
 # resource "aws_api_gateway_resource" "getTranslationRoot" {
 #   rest_api_id = aws_api_gateway_rest_api.getTranslation.id
