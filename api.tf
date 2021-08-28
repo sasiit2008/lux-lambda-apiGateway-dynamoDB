@@ -5,10 +5,10 @@ resource "aws_api_gateway_rest_api" "getTranslation" {
   tags = merge({ Name = "${var.project}-${var.environment}-getTranslation-apigateway" }, tomap(var.additional_tags))
 }
 
-resource "aws_api_gateway_resource" "getTranslationRoot" {
-  rest_api_id = aws_api_gateway_rest_api.getTranslation.id
-  path_part   = "/"
-}
+# resource "aws_api_gateway_resource" "getTranslationRoot" {
+#   rest_api_id = aws_api_gateway_rest_api.getTranslation.id
+#   path_part   = "/"
+# }
 resource "aws_api_gateway_resource" "getTranslation" {
   rest_api_id = aws_api_gateway_rest_api.getTranslation.id
   parent_id   = aws_api_gateway_rest_api.getTranslation.root_resource_id
