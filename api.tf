@@ -7,13 +7,10 @@ resource "aws_api_gateway_rest_api" "getTranslation" {
     minimum_compression_size     = -1
     name                         = "getTranslation"
     tags = merge({ Name = "${var.project}-${var.environment}-getTranslation-apigateway" }, tomap(var.additional_tags))
-
-
     endpoint_configuration {
         types            = [
             "REGIONAL",
         ]
-        vpc_endpoint_ids = []
     }
 }
 
