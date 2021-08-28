@@ -5,7 +5,7 @@ resource "aws_lex_bot" "LATIS_AddressBook_HELP" {
     enable_model_improvements       = true
     idle_session_ttl_in_seconds     = 300
     locale                          = "en-GB"
-    name                            = "${var.project}-chatbot-${var.environment}"
+    name                            = "vwt_corp_chatbot_latis"
     nlu_intent_confidence_threshold = 0.4
     process_behavior                = "SAVE"
     # version                         = "99"
