@@ -1,4 +1,4 @@
-resource "aws_lex_bot" "LATIS_AddressBook_HELP" {
+resource "aws_lex_bot" "lex" {
     child_directed                  = false
     create_version                  = false
     detect_sentiment                = false
