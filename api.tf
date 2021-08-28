@@ -30,20 +30,19 @@ resource "aws_api_gateway_method" "getTranslation" {
   resource_id        = aws_api_gateway_resource.getTranslation.id
 }
 
+resource "aws_api_gateway_method_response" "getTranslation" {
+    http_method         = "POST"
+    rest_api_id = aws_api_gateway_rest_api.getTranslation.id
+    resource_id = aws_api_gateway_resource.getTranslation.id
+    response_models     = {
+        "application/json" = "Empty"
+    }
+    response_parameters = {
+        "method.response.header.Access-Control-Allow-Origin" = false
+    }
+    status_code         = "200"
+}
 
-
-# resource "aws_api_gateway_method" "get" {
-
-#   http_method   = "GET"
-#   authorization = "NONE"
-# }
-
-# resource "aws_api_gateway_method_response" "get" {
-#   rest_api_id = aws_api_gateway_rest_api.apiLambda.id
-#   resource_id = aws_api_gateway_resource.apiLambda.id
-#   http_method = aws_api_gateway_method.get.http_method
-#   status_code = "200"
-# }
 
 # resource "aws_api_gateway_integration" "get" {
 #   rest_api_id             = aws_api_gateway_rest_api.apiLambda.id
