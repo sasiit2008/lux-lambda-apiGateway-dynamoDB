@@ -75,7 +75,7 @@ resource "aws_api_gateway_integration_response" "getTranslation" {
 resource "aws_api_gateway_deployment" "getTranslation" {
   depends_on  = [aws_api_gateway_integration.getTranslation]
   rest_api_id = aws_api_gateway_rest_api.getTranslation.id
-  stage_name  = "development-stage"
+  stage_name  = "deployment-stage"
 }
 
 resource "aws_api_gateway_stage" "getTranslation" {
