@@ -71,3 +71,4 @@ resource "aws_api_gateway_integration_response" "getTranslation" {
   status_code = "200"
 }
 
+
