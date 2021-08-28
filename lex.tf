@@ -8,7 +8,7 @@ resource "aws_lex_bot" "LATIS_AddressBook_HELP" {
     name                            = "${var.project}-chatbot-${var.environment}"
     nlu_intent_confidence_threshold = 0.4
     process_behavior                = "SAVE"
-    version                         = "99"
+    # version                         = "99"
     voice_id                        = "0"
 
     abort_statement {
