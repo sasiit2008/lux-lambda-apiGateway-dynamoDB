@@ -38,7 +38,7 @@ resource "aws_api_gateway_method_response" "getTranslation" {
     "application/json" = "Empty"
   }
   response_parameters = {
-    "method.response.header.Access-Control-Allow-Origin" = false
+    "method.response.header.Access-Control-Allow-Origin" = "'*'"
   }
   status_code = "200"
 }
