@@ -58,19 +58,16 @@ resource "aws_api_gateway_integration" "getTranslation" {
   uri                     = "arn:aws:apigateway:${var.region}:lambda:path/2015-03-31/functions/${aws_lambda_function.translate.arn}/invocations"
 }
 
+resource "aws_api_gateway_integration_response" "getTranslation" {
+    http_method         = http_method = aws_api_gateway_method.getTranslation.http_method
+    rest_api_id = aws_api_gateway_rest_api.apiLambda.id
+    resource_id = aws_api_gateway_resource.apiLambda.id
+    response_parameters = {
+        "method.response.header.Access-Control-Allow-Origin" = "'*'"
+    }
+    response_templates  = {
+        "application/json" = ""
+    }
+    status_code         = "200"
+}
 
-# resource "aws_api_gateway_integration" "get" {
-#   rest_api_id             = aws_api_gateway_rest_api.apiLambda.id
-#   resource_id             = aws_api_gateway_resource.apiLambda.id
-#   http_method             = aws_api_gateway_method.get.http_method
-#   type                    = "AWS_PROXY"
-#   uri                     = aws_lambda_function.get.invoke_arn
-#   integration_http_method = "GET"
-# }
-
-# resource "aws_api_gateway_integration_response" "get" {
-#   rest_api_id = aws_api_gateway_rest_api.apiLambda.id
-#   resource_id = aws_api_gateway_resource.apiLambda.id
-#   http_method = aws_api_gateway_method.get.http_method
-#   status_code = aws_api_gateway_method_response.get.status_code
-# }
