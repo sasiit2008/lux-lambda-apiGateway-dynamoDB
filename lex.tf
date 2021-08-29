@@ -5,6 +5,7 @@ resource "aws_lex_bot_alias" "order_flowers_prod" {
   name        = "OrderFlowersProd"
 }
 
+
 resource "aws_lex_bot" "order_flowers_bot" {
   abort_statement {
     message {
