@@ -46,12 +46,12 @@ resource "aws_iam_policy" "policy" {
       "Resource": "*"
     },
     {
-        "Sid": "Invoke",
-        "Effect": "Allow",
-        "Action": [
-            "lambda:InvokeFunction"
-        ],
-        "Resource": aws_lambda_function.translate.arn
+      "Sid": "Invoke",
+      "Effect": "Allow",
+      "Action": [
+          "lambda:InvokeFunction"
+      ],
+      "Resource": "${aws_lambda_function.translate.arn}"
     }
   ]
 }
