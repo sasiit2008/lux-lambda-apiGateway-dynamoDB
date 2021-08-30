@@ -51,12 +51,7 @@ resource "aws_iam_policy" "policy" {
         "Action": [
             "lambda:InvokeFunction"
         ],
-        "Resource": aws_lambda_function.translate.arn,
-        "Condition": {
-            "StringEquals": {
-                "lambda:Principal": "lex.amazonaws.com"
-            }
-        }
+        "Resource": aws_lambda_function.translate.arn
     }
   ]
 }
