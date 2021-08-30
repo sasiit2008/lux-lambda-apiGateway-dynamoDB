@@ -1,10 +1,15 @@
+locals {
+  bot_name = var.environment == "dev" ? "vwt_corp_chatbot_latis" : "vwt_corp_chatbot_latis${var.environment}"
+}
 resource "aws_lambda_permission" "allow_cloudwatch" {
   statement_id  = "AllowExecutionFromLex"
   action        = "lambda:InvokeFunction"
   function_name = aws_lambda_function.translate.function_name
   principal     = "lex.amazonaws.com"
-  source_arn    = "${aws_lex_intent.LATIS_greetingUser.arn}"
+  source_arn    = "arn:aws:lex:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:intent:${locals.bot_name}:*"
 }
+
+
 
 
 resource "aws_lex_bot" "vwt_corp_chatbot_latis_iat_one" {
