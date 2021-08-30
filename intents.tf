@@ -16,7 +16,7 @@ resource "aws_lex_intent" "LATIS_greetingUser" {
       uri             = aws_lambda_function.translate.arn
     }
   }
-  name = "LATISgreetingUser"
+  name = var.environment == "dev" ? "vwt_corp_chatbot_latis" : "vwt_corp_chatbot_latis${var.environment}"
 
   rejection_statement {
     message {
