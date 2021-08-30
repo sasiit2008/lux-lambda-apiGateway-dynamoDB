@@ -181,393 +181,393 @@ resource "aws_lex_bot" "vwt_corp_chatbot_latis_iat_one" {
     intent_name    = "LATIS_GA_AccountPosting"
     intent_version = "$LATEST"
   }
-  intent {
-    intent_name    = "LATIS_GA_BuCreate"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_GA_BuMaster"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_GL_Accounts"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_GeneralAccounting_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Inquiry_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Inventory_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Invoicing_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_JC_CAF"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_JC_Commitment"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_JC_Fiscal"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_JC_Scheduling"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_MD_AddressBook"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_MRP"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_MRP_Help_Menu"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_MRP_SalesOrder"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Missing_Batch"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_NSP_PoApproval"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_NS_GL"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_NS_Purchase_Order_Rollout"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_POApproval_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_POEntry_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_POPRINT_HELP"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PO_Creation"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PO_MatchingReceipt"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PR_PO"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PoCreation_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PoCreation_LiveCheck"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PoEntry_Rejection"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PoInquiry_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PoPrint_InitialLines"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PoPrint_LiveCheck"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PoReceipt_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PoReceipt_LiveCheck"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_PoStatus_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Process_Purchase"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Process_Update"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Procurement_GL"
-    intent_version = "$LATEST"
+  # intent {
+  #   intent_name    = "LATIS_GA_BuCreate"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_GA_BuMaster"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_GL_Accounts"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_GeneralAccounting_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Inquiry_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Inventory_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Invoicing_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_JC_CAF"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_JC_Commitment"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_JC_Fiscal"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_JC_Scheduling"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_MD_AddressBook"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_MRP"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_MRP_Help_Menu"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_MRP_SalesOrder"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Missing_Batch"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_NSP_PoApproval"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_NS_GL"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_NS_Purchase_Order_Rollout"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_POApproval_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_POEntry_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_POPRINT_HELP"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PO_Creation"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PO_MatchingReceipt"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PR_PO"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PoCreation_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PoCreation_LiveCheck"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PoEntry_Rejection"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PoInquiry_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PoPrint_InitialLines"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PoPrint_LiveCheck"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PoReceipt_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PoReceipt_LiveCheck"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_PoStatus_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Process_Purchase"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Process_Update"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Procurement_GL"
+  #   intent_version = "$LATEST"
 
-  }
-  intent {
-    intent_name    = "LATIS_Procurement_Purchase"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Procurement_PurchaseOrder_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_ProjectMaster_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Purchase_Order"
-    intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Procurement_Purchase"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Procurement_PurchaseOrder_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_ProjectMaster_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Purchase_Order"
+  #   intent_version = "$LATEST"
 
-  }
-  intent {
-    intent_name    = "LATIS_Random_Identifier"
-    intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Random_Identifier"
+  #   intent_version = "$LATEST"
 
-  }
-  intent {
-    intent_name    = "LATIS_Record_Invalid_message_in_various_programmes"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Reminder_Letter"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Response_No"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Response_Yes"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SD_NextStatus"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SD_OD"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SODOC_blank"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SODOC_print"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SO_Inquiry"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SO_Lots"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SO_Status_Update"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Sales"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SalesOrder_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SalesUpdate_Failure"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SalesUpdate_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_SalesUpdate_LiveCheck"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Sales_AR_Invoice"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Sales_Order"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Sales_Order_loaction"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Sales_Update"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Scheduling_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_ShipConfirm_LiveCheck"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Supplier_AP_Invoice"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_TEServiceOrder_LiveCheck"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_TE_AfterApproval"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_TE_BeforeApproval"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_TimeAssignment_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_TimeEntry_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_TimeEntry_LiveCheck"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_TimeIntegration_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_TimeSetup_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_TimeUpload_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Time_Entry"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Time_Entry_Integreted"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Time_Entry_TimeCalender"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Time_Entry_TimeCard"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Time_Entry_TimeWeek"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Time_Entry_Uploaded"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Time_InvalidPayStatus"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Unresolved"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_VAT_report"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_VM_Deactive"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_VOM_PoUpdate"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_VariationManagement_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Vendor"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_VendorMaster_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Vendor_HELP"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Vendor_Hold"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_VoucherMatch_LiveCheck"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Websend_AR"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Websend_Invoice"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_WorkbenchOrders_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_greetingUser"
-    intent_version = "$LATEST"
-  }
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Record_Invalid_message_in_various_programmes"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Reminder_Letter"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Response_No"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Response_Yes"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SD_NextStatus"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SD_OD"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SODOC_blank"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SODOC_print"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SO_Inquiry"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SO_Lots"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SO_Status_Update"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Sales"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SalesOrder_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SalesUpdate_Failure"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SalesUpdate_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_SalesUpdate_LiveCheck"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Sales_AR_Invoice"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Sales_Order"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Sales_Order_loaction"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Sales_Update"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Scheduling_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_ShipConfirm_LiveCheck"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Supplier_AP_Invoice"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_TEServiceOrder_LiveCheck"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_TE_AfterApproval"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_TE_BeforeApproval"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_TimeAssignment_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_TimeEntry_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_TimeEntry_LiveCheck"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_TimeIntegration_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_TimeSetup_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_TimeUpload_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Time_Entry"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Time_Entry_Integreted"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Time_Entry_TimeCalender"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Time_Entry_TimeCard"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Time_Entry_TimeWeek"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Time_Entry_Uploaded"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Time_InvalidPayStatus"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Unresolved"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_VAT_report"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_VM_Deactive"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_VOM_PoUpdate"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_VariationManagement_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Vendor"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_VendorMaster_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Vendor_HELP"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Vendor_Hold"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_VoucherMatch_LiveCheck"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Websend_AR"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Websend_Invoice"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_WorkbenchOrders_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_greetingUser"
+  #   intent_version = "$LATEST"
+  # }
   intent {
     intent_name    = aws_lex_intent.LATIS_greetingUser.name
     intent_version = aws_lex_intent.LATIS_greetingUser.version
