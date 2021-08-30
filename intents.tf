@@ -12,9 +12,13 @@ resource "aws_lex_intent" "LATIS_greetingUser" {
   description = "Intent to book a car on StayBooker"
 
   fulfillment_activity {
-    type = "ReturnIntent"
-  }
+    type = "CodeHook"
 
+    code_hook {
+      message_version = "1.0"
+      uri             = aws_lambda_function.translate.arn
+    }
+  }
   name = "LATISgreetingUser"
 
   rejection_statement {
@@ -33,6 +37,6 @@ resource "aws_lex_intent" "LATIS_greetingUser" {
     "Hello",
     "Hi",
   ]
-  
+
 }
 
