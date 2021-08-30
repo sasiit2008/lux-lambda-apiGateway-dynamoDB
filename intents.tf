@@ -1,19 +1,16 @@
 resource "aws_lex_intent" "LATIS_greetingUser" {
   confirmation_prompt {
     max_attempts = 2
-
     message {
       content      = "Sorry, I could not understand. Please type Help"
       content_type = "PlainText"
     }
-
   }
 
   description = "Intent to book a car on StayBooker"
 
   fulfillment_activity {
     type = "CodeHook"
-
     code_hook {
       message_version = "1.0"
       uri             = aws_lambda_function.translate.arn
