@@ -3,7 +3,7 @@ resource "aws_lambda_permission" "allow_cloudwatch" {
   action        = "lambda:InvokeFunction"
   function_name = aws_lambda_function.translate.function_name
   principal     = "lex.amazonaws.com"
-  source_arn    = aws_lex_bot.vwt_corp_chatbot_latis_iat_one.arn
+  source_arn    = "${aws_lex_bot.vwt_corp_chatbot_latis_iat_one.arn}:*"
 }
 
 
