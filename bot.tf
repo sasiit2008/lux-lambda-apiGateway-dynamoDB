@@ -21,170 +21,167 @@ resource "aws_lex_bot" "vwt_corp_chatbot_latis_iat_one" {
   detect_sentiment            = false
   idle_session_ttl_in_seconds = 600
 
-  intent {
-    intent_name    = "LATIS_AP_Automatic_Payment"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_BatchInUse"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_BatchPosting"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_HELP"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_Invoice_Reversal"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_Manual_Payment"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_Match"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_Payment"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_Payment_Supplier"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_VoucherRedistribution"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_VoucherReversal"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_Voucher_Approval_process"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AP_Voucher_Automatic_Payment"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AR_ChangeVatCode"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AR_Contract_Billing"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AR_HELP"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AR_Invoice_Deletion"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AR_Invoice_Printout"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AR_Invoice_void"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AR_or_AP_not_Matching_GL"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_AddressBook_HELP"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_All"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Batch_LiveCheck"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Budget_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_CAFRecalculation_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_CAF_HELP"
-    intent_version = "6"
-  }
-  intent {
-    intent_name    = "LATIS_CafIssue_LiveCheck"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_ChangeLanguage"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Create_Incident"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Currency"
-    intent_version = "$LATEST"
-  }
   # intent {
-  #   intent_name    = "LATIS_Customer_HELP"
+  #   intent_name    = "LATIS_AP_Automatic_Payment"
   #   intent_version = "$LATEST"
   # }
   # intent {
-  #   intent_name    = "LATIS_End_Greetings"
+  #   intent_name    = "LATIS_AP_BatchInUse"
   #   intent_version = "$LATEST"
   # }
-
   # intent {
-  #   intent_name    = "LATIS_GA_AccountPosting"
+  #   intent_name    = "LATIS_AP_BatchPosting"
   #   intent_version = "$LATEST"
   # }
-  intent {
-    intent_name    = "LATIS_FA_Creation"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_FA_Depreciation"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_FA_Fiscal"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_FA_Help"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_FA_JournalEntry"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Finance"
-    intent_version = "$LATEST"
-  }
-  intent {
-    intent_name    = "LATIS_Fixed_Assets"
-    intent_version = "$LATEST"
-  }
+  # intent {
+  #   intent_name    = "LATIS_AP_HELP"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AP_Invoice_Reversal"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AP_Manual_Payment"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AP_Match"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AP_Payment"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AP_Payment_Supplier"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AP_VoucherRedistribution"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AP_VoucherReversal"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AP_Voucher_Approval_process"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AP_Voucher_Automatic_Payment"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AR_ChangeVatCode"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AR_Contract_Billing"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AR_HELP"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AR_Invoice_Deletion"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AR_Invoice_Printout"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AR_Invoice_void"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AR_or_AP_not_Matching_GL"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_AddressBook_HELP"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_All"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Batch_LiveCheck"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Budget_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_CAFRecalculation_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_CAF_HELP"
+  #   intent_version = "6"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_CafIssue_LiveCheck"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_ChangeLanguage"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Create_Incident"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Currency"
+  #   intent_version = "$LATEST"
+  # }
+  # # intent {
+  # #   intent_name    = "LATIS_Customer_HELP"
+  # #   intent_version = "$LATEST"
+  # # }
+  # # intent {
+  # #   intent_name    = "LATIS_End_Greetings"
+  # #   intent_version = "$LATEST"
+  # # }
 
-
-
+  # # intent {
+  # #   intent_name    = "LATIS_GA_AccountPosting"
+  # #   intent_version = "$LATEST"
+  # # }
+  # intent {
+  #   intent_name    = "LATIS_FA_Creation"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_FA_Depreciation"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_FA_Fiscal"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_FA_Help"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_FA_JournalEntry"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Finance"
+  #   intent_version = "$LATEST"
+  # }
+  # intent {
+  #   intent_name    = "LATIS_Fixed_Assets"
+  #   intent_version = "$LATEST"
+  # }
   # intent {
   #   intent_name    = "LATIS_GA_BuCreate"
   #   intent_version = "$LATEST"
