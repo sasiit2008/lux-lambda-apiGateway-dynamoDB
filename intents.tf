@@ -36,4 +36,3 @@ resource "aws_lex_intent" "LATIS_greetingUser" {
   
 }
 
-
