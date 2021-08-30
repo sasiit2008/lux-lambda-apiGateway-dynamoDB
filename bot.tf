@@ -21,14 +21,19 @@ resource "aws_lex_bot" "vwt_corp_chatbot_latis_iat_one" {
   detect_sentiment            = false
   idle_session_ttl_in_seconds = 600
 
-  //intent {
-    //intent_name    = "LATIS_greetingUser"
-    //intent_version = "1"
-    //intent_version = "$LATEST"
-    //intent_name    = aws_lex_intent.awsLATIS_greetingUser.name
-    //intent_version = aws_lex_intent.awsLATIS_greetingUser.version
-  //}
-intent {
+  intent {
+    intent_name    = "LATIS_AP_HELP"
+    intent_version = "$LATEST"
+  }
+  intent {
+    intent_name    = "LATIS_AddressBook_HELP"
+    intent_version = "$LATEST"
+  }
+  intent {
+    intent_name    = "LATIS_Budget_Help"
+    intent_version = "$LATEST"
+  }
+  intent {
     intent_name    = aws_lex_intent.LATIS_greetingUser.name
     intent_version = aws_lex_intent.LATIS_greetingUser.version
   }
