@@ -149,6 +149,11 @@ resource "aws_lex_bot" "vwt_corp_chatbot_latis_iat_one" {
   #   intent_name    = "LATIS_End_Greetings"
   #   intent_version = "$LATEST"
   # }
+
+  # intent {
+  #   intent_name    = "LATIS_GA_AccountPosting"
+  #   intent_version = "$LATEST"
+  # }
   intent {
     intent_name    = "LATIS_FA_Creation"
     intent_version = "$LATEST"
@@ -177,10 +182,9 @@ resource "aws_lex_bot" "vwt_corp_chatbot_latis_iat_one" {
     intent_name    = "LATIS_Fixed_Assets"
     intent_version = "$LATEST"
   }
-  intent {
-    intent_name    = "LATIS_GA_AccountPosting"
-    intent_version = "$LATEST"
-  }
+
+
+
   # intent {
   #   intent_name    = "LATIS_GA_BuCreate"
   #   intent_version = "$LATEST"
