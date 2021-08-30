@@ -575,7 +575,7 @@ resource "aws_lex_bot" "vwt_corp_chatbot_latis_iat_one" {
   }
 
   locale           = "en-US"
-  name             = "LATISgreetingUser"
+  name             = var.environment == "dev" ? "vwt_corp_chatbot_latis" : "vwt_corp_chatbot_latis${var.environment}"
   process_behavior = "SAVE"
   voice_id         = "Salli"
 }
