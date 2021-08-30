@@ -12,3 +12,5 @@ data "aws_lex_intent" "LATIS_greetingUser" {
   name    = aws_lex_intent.LATIS_greetingUser.name
   version = aws_lex_intent.LATIS_greetingUser.version
 }
+
+
